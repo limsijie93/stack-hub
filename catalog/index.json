@@ -1,0 +1,1252 @@
+{
+  "sources": {
+    "mattpocock": {
+      "repo": "mattpocock/skills",
+      "ref": "6654f6b60cd9d5be8b54c6fafe44346dabeb3b76",
+      "subpath": "skills/",
+      "license": "MIT",
+      "url": "https://github.com/mattpocock/skills"
+    },
+    "pstack": {
+      "repo": "cursor/plugins",
+      "ref": "68836ddaf5697224520f1847d90cdb90ca8babaa",
+      "subpath": "pstack/skills/",
+      "license": "MIT",
+      "url": "https://github.com/cursor/plugins/tree/main/pstack"
+    }
+  },
+  "entries": [
+    {
+      "id": "mattpocock/engineering/ask-matt",
+      "source": "mattpocock",
+      "name": "ask-matt",
+      "path": "raw_source/mattpocock/engineering/ask-matt/SKILL.md",
+      "sha": "ae8eb9b211972d9ae584b41d0f1439c644494fc7",
+      "bytes": 11417,
+      "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/engineering/code-review",
+      "source": "mattpocock",
+      "name": "code-review",
+      "path": "raw_source/mattpocock/engineering/code-review/SKILL.md",
+      "sha": "e28d7acbf7b3bb4d7817b7eb5d9c105af03f6ec4",
+      "bytes": 6589,
+      "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/engineering/codebase-design",
+      "source": "mattpocock",
+      "name": "codebase-design",
+      "path": "raw_source/mattpocock/engineering/codebase-design/SKILL.md",
+      "sha": "3f63c8146dd2604b419c929e9876b90c30d410e9",
+      "bytes": 6446,
+      "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/engineering/diagnosing-bugs",
+      "source": "mattpocock",
+      "name": "diagnosing-bugs",
+      "path": "raw_source/mattpocock/engineering/diagnosing-bugs/SKILL.md",
+      "sha": "061c25a524acaa93d4534e9e08a793c0a5fe45fd",
+      "bytes": 8529,
+      "description": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/engineering/domain-modeling",
+      "source": "mattpocock",
+      "name": "domain-modeling",
+      "path": "raw_source/mattpocock/engineering/domain-modeling/SKILL.md",
+      "sha": "9b97707e19ef1f590aada356f2b3f6bb881f91be",
+      "bytes": 3331,
+      "description": "Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a CONTEXT.md, or recording or editing an ADR.",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/engineering/grill-with-docs",
+      "source": "mattpocock",
+      "name": "grill-with-docs",
+      "path": "raw_source/mattpocock/engineering/grill-with-docs/SKILL.md",
+      "sha": "62b9efb6f991d1b229adee7506962f13ced0c499",
+      "bytes": 247,
+      "description": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/engineering/implement",
+      "source": "mattpocock",
+      "name": "implement",
+      "path": "raw_source/mattpocock/engineering/implement/SKILL.md",
+      "sha": "7a0b11f5f4fe9505ea5c7983c3083ba1bf754f69",
+      "bytes": 433,
+      "description": "Implement a piece of work based on a spec or set of tickets.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/engineering/improve-codebase-architecture",
+      "source": "mattpocock",
+      "name": "improve-codebase-architecture",
+      "path": "raw_source/mattpocock/engineering/improve-codebase-architecture/SKILL.md",
+      "sha": "a578dd0a34ad0a8886abe7e7642b100106ba86d6",
+      "bytes": 5993,
+      "description": "Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/engineering/prototype",
+      "source": "mattpocock",
+      "name": "prototype",
+      "path": "raw_source/mattpocock/engineering/prototype/SKILL.md",
+      "sha": "a0044501fe0d385b4d8575b610188ede9b236ccf",
+      "bytes": 2931,
+      "description": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/engineering/research",
+      "source": "mattpocock",
+      "name": "research",
+      "path": "raw_source/mattpocock/engineering/research/SKILL.md",
+      "sha": "fecee97e9457ba039678d2fcf1b1bc9fca78307d",
+      "bytes": 794,
+      "description": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/engineering/resolving-merge-conflicts",
+      "source": "mattpocock",
+      "name": "resolving-merge-conflicts",
+      "path": "raw_source/mattpocock/engineering/resolving-merge-conflicts/SKILL.md",
+      "sha": "bfb7e5606e231e6808979f623fce76a9aad4b71c",
+      "bytes": 918,
+      "description": "Use when you need to resolve an in-progress git merge/rebase conflict.",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/engineering/setup-matt-pocock-skills",
+      "source": "mattpocock",
+      "name": "setup-matt-pocock-skills",
+      "path": "raw_source/mattpocock/engineering/setup-matt-pocock-skills/SKILL.md",
+      "sha": "7f6f576e2e54e0d287cbb9731ebe0343f54e50cf",
+      "bytes": 6841,
+      "description": "Configure this repo for the engineering skills: set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "excluded",
+      "reason": "Installer for the upstream stack's own issue tracker and triage label vocabulary. Setup for that repo, not transferable technique."
+    },
+    {
+      "id": "mattpocock/engineering/tdd",
+      "source": "mattpocock",
+      "name": "tdd",
+      "path": "raw_source/mattpocock/engineering/tdd/SKILL.md",
+      "sha": "8fc086710806190ee7c4baa32089cb877a75736a",
+      "bytes": 3549,
+      "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/engineering/to-spec",
+      "source": "mattpocock",
+      "name": "to-spec",
+      "path": "raw_source/mattpocock/engineering/to-spec/SKILL.md",
+      "sha": "3f52599ae2a4347aee5a07432c2707518e691a7f",
+      "bytes": 3043,
+      "description": "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/engineering/to-tickets",
+      "source": "mattpocock",
+      "name": "to-tickets",
+      "path": "raw_source/mattpocock/engineering/to-tickets/SKILL.md",
+      "sha": "e868c831fcfb1e124e010bcdf84a429ec879160f",
+      "bytes": 5671,
+      "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker).",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/engineering/triage",
+      "source": "mattpocock",
+      "name": "triage",
+      "path": "raw_source/mattpocock/engineering/triage/SKILL.md",
+      "sha": "37ddea1e3dcf8fb5be5b92e4e45f2c34b8e61d3e",
+      "bytes": 6557,
+      "description": "Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/engineering/wayfinder",
+      "source": "mattpocock",
+      "name": "wayfinder",
+      "path": "raw_source/mattpocock/engineering/wayfinder/SKILL.md",
+      "sha": "812805b760baf328db0ebdef6f3807e381f97016",
+      "bytes": 11908,
+      "description": "Plan a huge chunk of work (more than one agent session can hold) as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/engineering/wizard",
+      "source": "mattpocock",
+      "name": "wizard",
+      "path": "raw_source/mattpocock/engineering/wizard/SKILL.md",
+      "sha": "c4294ad8298b9b95fc727496b1b802b1f7363fba",
+      "bytes": 4123,
+      "description": "Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover. Don't invoke this for steps the agent can perform itself.",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/in-progress/claude-handoff",
+      "source": "mattpocock",
+      "name": "claude-handoff",
+      "path": "raw_source/mattpocock/in-progress/claude-handoff/SKILL.md",
+      "sha": "9ab14e312a0d5cffe926eeeab12cef7dc8f84d54",
+      "bytes": 1301,
+      "description": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "argument-hint",
+        "disable-model-invocation"
+      ],
+      "status": "excluded",
+      "reason": "Marked in-progress upstream."
+    },
+    {
+      "id": "mattpocock/in-progress/implement-spec",
+      "source": "mattpocock",
+      "name": "implement-spec",
+      "path": "raw_source/mattpocock/in-progress/implement-spec/SKILL.md",
+      "sha": "d5097f847fc003935599a7f7bf8f0f7186427910",
+      "bytes": 2043,
+      "description": "Implement a specification in code.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "excluded",
+      "reason": "Marked in-progress upstream."
+    },
+    {
+      "id": "mattpocock/in-progress/loop-me",
+      "source": "mattpocock",
+      "name": "loop-me",
+      "path": "raw_source/mattpocock/in-progress/loop-me/SKILL.md",
+      "sha": "e58a474ca80feffdeb28842bc3bdee37da6510e7",
+      "bytes": 2522,
+      "description": "Grill me about specs for the workflows I want to build, within this workspace.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation",
+        "argument-hint"
+      ],
+      "status": "excluded",
+      "reason": "Marked in-progress upstream."
+    },
+    {
+      "id": "mattpocock/in-progress/retro",
+      "source": "mattpocock",
+      "name": "retro",
+      "path": "raw_source/mattpocock/in-progress/retro/SKILL.md",
+      "sha": "f5fed82c7b8597a852a4fa8d292b00a1d5c8bd16",
+      "bytes": 3388,
+      "description": "Conduct a retrospective on a coding session.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "excluded",
+      "reason": "Marked in-progress upstream."
+    },
+    {
+      "id": "mattpocock/in-progress/setup-ts-deep-modules",
+      "source": "mattpocock",
+      "name": "setup-ts-deep-modules",
+      "path": "raw_source/mattpocock/in-progress/setup-ts-deep-modules/SKILL.md",
+      "sha": "7e30047eaeda175de5d93886596a37baf365bb90",
+      "bytes": 7546,
+      "description": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module, with implementation hidden in subfolders and reachable only through its entry-point files. User-invoked.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "excluded",
+      "reason": "Marked in-progress upstream."
+    },
+    {
+      "id": "mattpocock/in-progress/writing-beats",
+      "source": "mattpocock",
+      "name": "writing-beats",
+      "path": "raw_source/mattpocock/in-progress/writing-beats/SKILL.md",
+      "sha": "3d3b25b605491adc5c62ae5423127717a94b9632",
+      "bytes": 4855,
+      "description": "Writing, exploit; assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "excluded",
+      "reason": "Marked in-progress upstream."
+    },
+    {
+      "id": "mattpocock/in-progress/writing-fragments",
+      "source": "mattpocock",
+      "name": "writing-fragments",
+      "path": "raw_source/mattpocock/in-progress/writing-fragments/SKILL.md",
+      "sha": "c7c889b880cf9c8d289119dea5ff240641b615ca",
+      "bytes": 3558,
+      "description": "Writing, explore: mine raw fragments, no structure yet.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "excluded",
+      "reason": "Marked in-progress upstream."
+    },
+    {
+      "id": "mattpocock/in-progress/writing-shape",
+      "source": "mattpocock",
+      "name": "writing-shape",
+      "path": "raw_source/mattpocock/in-progress/writing-shape/SKILL.md",
+      "sha": "02f2866d13e72504e010f2ad3458eb9b36b876db",
+      "bytes": 5922,
+      "description": "Writing, exploit: shape raw material into an article, paragraph by paragraph.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "excluded",
+      "reason": "Marked in-progress upstream."
+    },
+    {
+      "id": "mattpocock/misc/git-guardrails-claude-code",
+      "source": "mattpocock",
+      "name": "git-guardrails-claude-code",
+      "path": "raw_source/mattpocock/misc/git-guardrails-claude-code/SKILL.md",
+      "sha": "58bcdd875b164093b95f436fa32a65c6cb5eb572",
+      "bytes": 2313,
+      "description": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/misc/migrate-to-shoehorn",
+      "source": "mattpocock",
+      "name": "migrate-to-shoehorn",
+      "path": "raw_source/mattpocock/misc/migrate-to-shoehorn/SKILL.md",
+      "sha": "ae4f965e204fc93cedbc4e2c306e92829d93f800",
+      "bytes": 2795,
+      "description": "Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace `as` in tests, or needs partial test data.",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "excluded",
+      "reason": "Codemod for one library (@total-typescript/shoehorn)."
+    },
+    {
+      "id": "mattpocock/misc/scaffold-exercises",
+      "source": "mattpocock",
+      "name": "scaffold-exercises",
+      "path": "raw_source/mattpocock/misc/scaffold-exercises/SKILL.md",
+      "sha": "d87df28e7d8abb4e57ecc6e47d71c274d16054c7",
+      "bytes": 3589,
+      "description": "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when user wants to scaffold exercises, create exercise stubs, or set up a new course section.",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "excluded",
+      "reason": "Authoring tool for the upstream author's course material."
+    },
+    {
+      "id": "mattpocock/misc/setup-pre-commit",
+      "source": "mattpocock",
+      "name": "setup-pre-commit",
+      "path": "raw_source/mattpocock/misc/setup-pre-commit/SKILL.md",
+      "sha": "1b9708168263067adb4684d06ebb8f4ccfe9682c",
+      "bytes": 2258,
+      "description": "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current repo. Use when user wants to add pre-commit hooks, set up Husky, configure lint-staged, or add commit-time formatting/typechecking/testing.",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "excluded",
+      "reason": "One-off repo setup for Husky and lint-staged. A script, not a technique."
+    },
+    {
+      "id": "mattpocock/productivity/grill-me",
+      "source": "mattpocock",
+      "name": "grill-me",
+      "path": "raw_source/mattpocock/productivity/grill-me/SKILL.md",
+      "sha": "3947ff9c4ad980d14fc07fccbf659d47c114e81d",
+      "bytes": 157,
+      "description": "A relentless interview to sharpen a plan or design.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/productivity/grilling",
+      "source": "mattpocock",
+      "name": "grilling",
+      "path": "raw_source/mattpocock/productivity/grilling/SKILL.md",
+      "sha": "8ca78c6d8f901aab0c5a1f896034b70e666ff2a3",
+      "bytes": 1987,
+      "description": "Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/productivity/handoff",
+      "source": "mattpocock",
+      "name": "handoff",
+      "path": "raw_source/mattpocock/productivity/handoff/SKILL.md",
+      "sha": "2eb98a51b97bb5bac461a26ad14828eeac827909",
+      "bytes": 894,
+      "description": "Compact the current conversation into a handoff document for another agent to pick up.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "argument-hint",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/productivity/teach",
+      "source": "mattpocock",
+      "name": "teach",
+      "path": "raw_source/mattpocock/productivity/teach/SKILL.md",
+      "sha": "c679eeccd48ca720c8196e5d9a9e58223abf213b",
+      "bytes": 9506,
+      "description": "Teach the user a new skill or concept, within this workspace.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation",
+        "argument-hint"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/productivity/to-questionnaire",
+      "source": "mattpocock",
+      "name": "to-questionnaire",
+      "path": "raw_source/mattpocock/productivity/to-questionnaire/SKILL.md",
+      "sha": "dadd0c00d6a350acaa15bb9ca1b96b20ead684ca",
+      "bytes": 2904,
+      "description": "Turn a decision you can't fully answer into a questionnaire for someone else to fill in.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/productivity/wait-what",
+      "source": "mattpocock",
+      "name": "wait-what",
+      "path": "raw_source/mattpocock/productivity/wait-what/SKILL.md",
+      "sha": "f8854f1b4527bca90378baf5430557172136a1bf",
+      "bytes": 394,
+      "description": "Stop. That last message did not land: re-pitch it.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "mattpocock/productivity/writing-for-agents",
+      "source": "mattpocock",
+      "name": "writing-for-agents",
+      "path": "raw_source/mattpocock/productivity/writing-for-agents/SKILL.md",
+      "sha": "a37608daf6e835e767deecfb498facecaaba82ba",
+      "bytes": 10886,
+      "description": "Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/architect",
+      "source": "pstack",
+      "name": "architect",
+      "path": "raw_source/pstack/architect/SKILL.md",
+      "sha": "9c5dd1b5ab5d068fbacc60ed48d6603af0c237c3",
+      "bytes": 6061,
+      "description": "Sketch types, signatures, and module structure before code, then stay in the loop while implementation fills in. Use for /architect, 'architect this', 'design this', or non-trivial work where jumping to code would lock in the wrong shape.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/arena",
+      "source": "pstack",
+      "name": "arena",
+      "path": "raw_source/pstack/arena/SKILL.md",
+      "sha": "59a167432ba97dc349cffa379ee851b8b700c960",
+      "bytes": 5367,
+      "description": "Spawn N parallel candidates at the same task, pick a base, graft the strongest parts of the losers into it. Use for /arena, 'arena this', 'throw it in the arena', or when one attempt at a non-trivial artifact would lock in the wrong shape.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/automate-me",
+      "source": "pstack",
+      "name": "automate-me",
+      "path": "raw_source/pstack/automate-me/SKILL.md",
+      "sha": "56829250c1fdce1ad72456d5421e1f1e5142373f",
+      "bytes": 7809,
+      "description": "Use for \"automate me\", \"create/update/refresh my -mode skill\", \"turn/capture my preferences or working style into a skill\", or wanting agents to follow how the user works. Drafts or revises a personal -mode skill via create-skill + unslop, optionally pulling fresh evidence from recent transcripts.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/blast-radius",
+      "source": "pstack",
+      "name": "blast-radius",
+      "path": "raw_source/pstack/blast-radius/SKILL.md",
+      "sha": "4b24c77e102955af19ae60aa10af642f69eaa8ba",
+      "bytes": 4112,
+      "description": "Find what a change could break somewhere else before it ships, beyond the diff, and prove the one fact it's safe because of by running real code instead of writing it up. Use for 'blast radius of X', 'what could this break', or reviewing a small diff you don't trust.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/bro",
+      "source": "pstack",
+      "name": "bro",
+      "path": "raw_source/pstack/bro/SKILL.md",
+      "sha": "b1701b778639c08bfc306291d70170c525c66a68",
+      "bytes": 267,
+      "description": "Restate the last message in plain human language, with no jargon.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/create-verification-skill",
+      "source": "pstack",
+      "name": "create-verification-skill",
+      "path": "raw_source/pstack/create-verification-skill/SKILL.md",
+      "sha": "f869e26122991252373d5b8f6357e5b9ff195a00",
+      "bytes": 5879,
+      "description": "Generate a project-local verification skill that drives your app the way a user does — any language, framework, or platform. Use for /create-verification-skill, \"make a control skill for this repo\", or when a project has no scripted way to prove UI/CLI/service behavior.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/figure-it-out",
+      "source": "pstack",
+      "name": "figure-it-out",
+      "path": "raw_source/pstack/figure-it-out/SKILL.md",
+      "sha": "6ffc04db212737584aac966c69c53836757fa545",
+      "bytes": 5161,
+      "description": "Design an auditable playbook when no narrower one fits: a large migration, an ambitious multi-part change, or work a human reviews after stepping away. Scales rigor to the task, runs a hypothesis loop, and logs decisions via show-me-your-work. Use for /figure-it-out, 'figure it out', a large migration, or when no narrower playbook applies.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/how",
+      "source": "pstack",
+      "name": "how",
+      "path": "raw_source/pstack/how/SKILL.md",
+      "sha": "c156b76aefd1b6ca11c3c4685b5efc38391a97c6",
+      "bytes": 7285,
+      "description": "Use for \"how does X work\", code walkthroughs before changing something, and placement / ownership / layering questions (\"where should this live\", \"which package owns this\", \"is this the right layer\"). Explains subsystem architecture, runtime flow, onboarding mental models. Can critique architecture. Use why for motivation.",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/interrogate",
+      "source": "pstack",
+      "name": "interrogate",
+      "path": "raw_source/pstack/interrogate/SKILL.md",
+      "sha": "11fb2fbe44ab3fb531bc35cc6a4e7d06c8472264",
+      "bytes": 5629,
+      "description": "Use for \"interrogate\", \"adversarial review\", \"multi-model review\", \"challenge this\", \"stress test this code\", \"find blind spots\", or \"tear this apart\". Multiple LLM reviewers challenge changes from independent angles.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/maintain-verification-skill",
+      "source": "pstack",
+      "name": "maintain-verification-skill",
+      "path": "raw_source/pstack/maintain-verification-skill/SKILL.md",
+      "sha": "a2680b91fead45a0b4963d8c367a854956bea59d",
+      "bytes": 4922,
+      "description": "Periodic pass that keeps a project's verification skill and feature map honest: parallel source readers per feature, one live session driving every feature, at most one PR of proven corrections. Use for /maintain-verification-skill or \"audit the verify skill\".",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/make-bot-ui",
+      "source": "pstack",
+      "name": "Make Bot UI",
+      "path": "raw_source/pstack/make-bot-ui/SKILL.md",
+      "sha": "9ae55ae3931ce59d4b28f03056b612e38bd9286e",
+      "bytes": 4618,
+      "description": "Use when building a custom UI (page, dashboard, buttons) that should wake a Grok Bot over a webhook, when the user must provide a webhook sender key, or when exposing that UI on Tailscale.",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "excluded",
+      "reason": "Specific to waking a Grok Bot over a webhook and exposing it on Tailscale. No equivalent surface here."
+    },
+    {
+      "id": "pstack/no-comments",
+      "source": "pstack",
+      "name": "no-comments",
+      "path": "raw_source/pstack/no-comments/SKILL.md",
+      "sha": "a14bdda050e71788638733d3b7c342be7f7a2523",
+      "bytes": 2655,
+      "description": "Spawn Comment Sicko, fix accepted findings, and offer encodings for claimed constraints.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/poteto-mode",
+      "source": "pstack",
+      "name": "Poteto Mode",
+      "path": "raw_source/pstack/poteto-mode/SKILL.md",
+      "sha": "a74065cd21d18c6c179e9b71f37f1ddb0baea1d8",
+      "bytes": 18858,
+      "description": "poteto's agent style for concise, detailed responses, deliberate subagents, unslopped prose, simple code, and verified work. Use for poteto, /poteto-mode, or requests to work in this style.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation",
+        "mode",
+        "icon",
+        "color",
+        "reminder"
+      ],
+      "status": "excluded",
+      "reason": "A personal agent-style profile for one individual. Preferences, not a reusable mechanism."
+    },
+    {
+      "id": "pstack/principle-boundary-discipline",
+      "source": "pstack",
+      "name": "principle-boundary-discipline",
+      "path": "raw_source/pstack/principle-boundary-discipline/SKILL.md",
+      "sha": "84d526ce7ea45d207587e80015912d5a01714e21",
+      "bytes": 1919,
+      "description": "Apply when wiring validation, error handling, or framework adapters. Concentrate guards at system boundaries (CLI, config, network, external APIs); trust internal types and keep business logic in pure functions.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/principle-build-the-lever",
+      "source": "pstack",
+      "name": "principle-build-the-lever",
+      "path": "raw_source/pstack/principle-build-the-lever/SKILL.md",
+      "sha": "8ba6740bd3bd9b2e582080bce0917cc4a7293d2f",
+      "bytes": 2655,
+      "description": "Apply to any non-trivial work, not just bulk work: edits, migrations, analyses, checks. Build the tool that does it or proves it (codemod, script, generator, or a skill your subagents follow) instead of working by hand. The tool is the artifact a reviewer can rerun.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/principle-encode-lessons-in-structure",
+      "source": "pstack",
+      "name": "principle-encode-lessons-in-structure",
+      "path": "raw_source/pstack/principle-encode-lessons-in-structure/SKILL.md",
+      "sha": "86a22f21146d358fc18afb2a0186da61470c3241",
+      "bytes": 2243,
+      "description": "Apply when you catch yourself writing the same instruction a second time, or notice a recurring correction. Encode the rule as a lint, metadata flag, runtime check, or script instead of more text.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/principle-exhaust-the-design-space",
+      "source": "pstack",
+      "name": "principle-exhaust-the-design-space",
+      "path": "raw_source/pstack/principle-exhaust-the-design-space/SKILL.md",
+      "sha": "85dd16f1312f3427e2dddcfc8e7deb89e2555bb3",
+      "bytes": 1152,
+      "description": "Apply when facing a novel UI interaction or architectural decision with no precedent in the codebase. Build 2-3 competing prototypes and compare side by side before committing.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/principle-experience-first",
+      "source": "pstack",
+      "name": "principle-experience-first",
+      "path": "raw_source/pstack/principle-experience-first/SKILL.md",
+      "sha": "be15f055d536721bbda859be3e3d202e78a2e001",
+      "bytes": 1308,
+      "description": "Apply when product, UX, or feature-scope tradeoffs come up. Choose user delight over implementation convenience; ship fewer polished features over more rough ones.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/principle-fix-root-causes",
+      "source": "pstack",
+      "name": "principle-fix-root-causes",
+      "path": "raw_source/pstack/principle-fix-root-causes/SKILL.md",
+      "sha": "5b3b7916c961c231e7ce1430cd93541204ec0ec0",
+      "bytes": 1366,
+      "description": "Apply when debugging. Trace each symptom to its root cause and fix it there; reproduce first, ask why until you reach it, resist nil-check guards that silence crashes.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/principle-foundational-thinking",
+      "source": "pstack",
+      "name": "principle-foundational-thinking",
+      "path": "raw_source/pstack/principle-foundational-thinking/SKILL.md",
+      "sha": "3fcc57b3a54dea965e245dad966cab423f768b11",
+      "bytes": 1780,
+      "description": "Apply before writing logic: choosing core types and data structures, sequencing scaffold-vs-feature work, asking what concurrent actors share. Get the data structures right so downstream code becomes obvious.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/principle-guard-the-context-window",
+      "source": "pstack",
+      "name": "principle-guard-the-context-window",
+      "path": "raw_source/pstack/principle-guard-the-context-window/SKILL.md",
+      "sha": "0862757bbb63e314f13f18528c25db85d0901078",
+      "bytes": 1152,
+      "description": "Apply when context is filling up: large outputs, long files, repeated reads, fan-out planning. Route bulk to subagents; keep summaries in the main thread, not raw payloads.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/principle-laziness-protocol",
+      "source": "pstack",
+      "name": "principle-laziness-protocol",
+      "path": "raw_source/pstack/principle-laziness-protocol/SKILL.md",
+      "sha": "16bbb97426d1bbcbf957c032f0629a96a4709753",
+      "bytes": 1520,
+      "description": "Apply when refactoring, evaluating diff size, or tempted to add abstractions, layers, or signal threading. Bias toward deletion and the smallest change that solves the problem.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/principle-make-operations-idempotent",
+      "source": "pstack",
+      "name": "principle-make-operations-idempotent",
+      "path": "raw_source/pstack/principle-make-operations-idempotent/SKILL.md",
+      "sha": "a0834247ca99b09c11441747717a8034d4c22d7c",
+      "bytes": 1390,
+      "description": "Apply when designing commands, lifecycle steps, or processing loops that run amid crashes, restarts, and retries. Converge to the same end state regardless of partial prior runs.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/principle-migrate-callers-then-delete-legacy-apis",
+      "source": "pstack",
+      "name": "principle-migrate-callers-then-delete-legacy-apis",
+      "path": "raw_source/pstack/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+      "sha": "a0c6e65e1eaf58278fa6bac1a01c23f998759f5c",
+      "bytes": 1152,
+      "description": "Apply when introducing a new internal API while old callers still exist. Migrate callers and delete the old API in the same wave instead of preserving compatibility layers.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/principle-minimize-reader-load",
+      "source": "pstack",
+      "name": "principle-minimize-reader-load",
+      "path": "raw_source/pstack/principle-minimize-reader-load/SKILL.md",
+      "sha": "1c5e18c332438ccd5e47f108ec28872e85e82501",
+      "bytes": 2099,
+      "description": "Apply when reviewing or shaping code that's hard to trace. Count layers between question and answer, and hidden state in the reader's head; collapse one-caller wrappers and shrink mutable scope.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/principle-model-the-domain",
+      "source": "pstack",
+      "name": "principle-model-the-domain",
+      "path": "raw_source/pstack/principle-model-the-domain/SKILL.md",
+      "sha": "b2f6449498505a866592493ff3f3a10cfdd8ce5c",
+      "bytes": 2127,
+      "description": "Apply when writing stateful logic, or when code branches a lot or repeats a shape assumption across files. Encode the domain in a structure instead of scattered conditionals.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/principle-never-block-on-the-human",
+      "source": "pstack",
+      "name": "principle-never-block-on-the-human",
+      "path": "raw_source/pstack/principle-never-block-on-the-human/SKILL.md",
+      "sha": "0c55555f85d6636cc26429cc18016ffdafaff576",
+      "bytes": 1596,
+      "description": "Apply when tempted to ask 'should I do X?' on reversible work. Proceed, present the result, let the human course-correct after the fact; reserve confirmation for irreversible actions.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/principle-outcome-oriented-execution",
+      "source": "pstack",
+      "name": "principle-outcome-oriented-execution",
+      "path": "raw_source/pstack/principle-outcome-oriented-execution/SKILL.md",
+      "sha": "4c2ed4695b4ca15ea5a98468c13bfe5de97f16df",
+      "bytes": 1132,
+      "description": "Apply during planned rewrites and migrations with explicit phase boundaries. Converge on the target architecture; don't preserve smooth intermediate states with throwaway compatibility code.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/principle-prove-it-works",
+      "source": "pstack",
+      "name": "principle-prove-it-works",
+      "path": "raw_source/pstack/principle-prove-it-works/SKILL.md",
+      "sha": "088c412cc38eb37442914a71d9e05bc6ee430a1b",
+      "bytes": 2068,
+      "description": "Apply after completing a task, before declaring done. Verify against the real artifact (run the feature, read the actual value, inspect the diff), not a proxy, self-report, or 'it compiles.'",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/principle-redesign-from-first-principles",
+      "source": "pstack",
+      "name": "principle-redesign-from-first-principles",
+      "path": "raw_source/pstack/principle-redesign-from-first-principles/SKILL.md",
+      "sha": "6a8cf256d69d0d5f2ce4b57795f2794c41c8e5a0",
+      "bytes": 943,
+      "description": "Apply when integrating a new requirement into an existing design. Redesign as if the requirement had been a foundational assumption from day one, instead of bolting it on.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/principle-separate-before-serializing-shared-state",
+      "source": "pstack",
+      "name": "principle-separate-before-serializing-shared-state",
+      "path": "raw_source/pstack/principle-separate-before-serializing-shared-state/SKILL.md",
+      "sha": "523591e0a1bda493598292358bd2142277fdbd19",
+      "bytes": 1631,
+      "description": "Apply when concurrent actors might write to the same file, branch, key, or state object. Eliminate the sharing first; serialize structurally only when one shared writer is a real invariant.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/principle-sequence-verifiable-units",
+      "source": "pstack",
+      "name": "principle-sequence-verifiable-units",
+      "path": "raw_source/pstack/principle-sequence-verifiable-units/SKILL.md",
+      "sha": "737480800564d634347afdcef25dd48851e9f2eb",
+      "bytes": 2290,
+      "description": "Apply to multi-step work (sweeps, migrations, runs of similar edits) and to how you stack commits and PRs. Break work into small units that each end in a verifiable state, check each before the next, and order delivery so the sequence proves itself to a reviewer.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/principle-subtract-before-you-add",
+      "source": "pstack",
+      "name": "principle-subtract-before-you-add",
+      "path": "raw_source/pstack/principle-subtract-before-you-add/SKILL.md",
+      "sha": "1666d2617dbc9cf107ecb52aac30b6ffbcc1159b",
+      "bytes": 1337,
+      "description": "Apply when sequencing an addition, refactor, or rewrite. Remove dead weight, redundant validators, and stub references first, then build on the simpler base.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/principle-type-system-discipline",
+      "source": "pstack",
+      "name": "principle-type-system-discipline",
+      "path": "raw_source/pstack/principle-type-system-discipline/SKILL.md",
+      "sha": "192a1255709e105cd055543b058b9e1bf66d84e1",
+      "bytes": 5097,
+      "description": "Apply when designing types, reviewing a function signature, or writing code in any statically-typed language. Make illegal states unrepresentable, brand semantic primitives, parse external data at boundaries, refuse to lie to the compiler, exhaust variants, derive from authoritative schemas.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/recall",
+      "source": "pstack",
+      "name": "recall",
+      "path": "raw_source/pstack/recall/SKILL.md",
+      "sha": "7e3f26595160dac08bfc3287cef48d7e75b74dfa",
+      "bytes": 5696,
+      "description": "Reconstruct your recent working context from your own chat history, live state, and the shared record (user reports, prior fixes, incidents), then hand back a tight current-state brief. Use for 'recall my work on X', 'catch me up', 'what have I been working on', 'where did I leave off', before starting or resuming work.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/reflect",
+      "source": "pstack",
+      "name": "reflect",
+      "path": "raw_source/pstack/reflect/SKILL.md",
+      "sha": "a0e50f7eeb993559744a7a8b44b7c4f8a432d92d",
+      "bytes": 5045,
+      "description": "Spawn three parallel review subagents over the active transcript, surface learnings, and route each to a concrete edit on an existing skill. Use when the user says reflect.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/setup-pstack",
+      "source": "pstack",
+      "name": "setup-pstack",
+      "path": "raw_source/pstack/setup-pstack/SKILL.md",
+      "sha": "ee882deb0600bc34a07a043033e12e6a1b05aecf",
+      "bytes": 4648,
+      "description": "Configure which models pstack uses per role. Detects your available models and writes an always-applied rule that overrides the skill defaults. Use for /setup-pstack, \"configure pstack models\", or changing pstack's model choices.",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "excluded",
+      "reason": "Installer that detects available models and writes pstack's per-role model config. Configures the upstream stack itself."
+    },
+    {
+      "id": "pstack/show-me-your-work",
+      "source": "pstack",
+      "name": "show-me-your-work",
+      "path": "raw_source/pstack/show-me-your-work/SKILL.md",
+      "sha": "8a9c731acf5bb7ad789e10ec7c5af6970dce1176",
+      "bytes": 6762,
+      "description": "Keep a reviewable decision trail for long-running or unattended work: a TSV log with one row per decision (what, why, evidence, result). Local by default; commit it when a reviewer needs the trail to trust the result. Use for /show-me-your-work, autonomous or multi-phase runs, or work a human reviews after stepping away.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/swarm",
+      "source": "pstack",
+      "name": "swarm",
+      "path": "raw_source/pstack/swarm/SKILL.md",
+      "sha": "b7e61ec7bc46629930582a50f12a6b9f1f28a368",
+      "bytes": 2232,
+      "description": "Fan out N parallel workers, drain them, and return one report. Use for /swarm, 'swarm this', or parallel coverage, races, gauntlets, and exploration.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/tdd",
+      "source": "pstack",
+      "name": "tdd",
+      "path": "raw_source/pstack/tdd/SKILL.md",
+      "sha": "7d923bd705e4727b0bc9a378ca0928cc825035de",
+      "bytes": 3536,
+      "description": "Use only when the user explicitly asks for TDD, a failing test, or a regression test, OR when the bug has an obvious cheap local test target. Skip when the test path is unclear, expensive, integration-heavy, or not requested.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/teach",
+      "source": "pstack",
+      "name": "teach",
+      "path": "raw_source/pstack/teach/SKILL.md",
+      "sha": "beea0ffaa916e8fcf93f2bf13c632f2a9259d1e2",
+      "bytes": 6253,
+      "description": "Explain a body of work plainly so a person actually understands it. Runs the `how` and `why` skills and weaves what they find into one clear explanation. Use for 'teach me this', 'help me really understand X', 'explain this change or subsystem to me'.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/technical-writing",
+      "source": "pstack",
+      "name": "technical-writing",
+      "path": "raw_source/pstack/technical-writing/SKILL.md",
+      "sha": "d13baf98426a72764f94d18ab45d1549151a6c38",
+      "bytes": 11522,
+      "description": "Layered technical-writing standard: Diátaxis structure, Google developer style sentences, STE instruction rules, Global English syntax. Use for /technical-writing or when writing or reviewing docs, RFCs, readmes, PR descriptions, or commit messages.",
+      "frontmatter_keys": [
+        "name",
+        "description",
+        "disable-model-invocation"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/typescript-best-practices",
+      "source": "pstack",
+      "name": "typescript-best-practices",
+      "path": "raw_source/pstack/typescript-best-practices/SKILL.md",
+      "sha": "9c4e3cb6236433ca480dcf246a11bca529794e88",
+      "bytes": 2532,
+      "description": "TypeScript best practices. Use when reading or editing any .ts or .tsx file.",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/unslop",
+      "source": "pstack",
+      "name": "unslop",
+      "path": "raw_source/pstack/unslop/SKILL.md",
+      "sha": "2a93c06bbe54fde89a36c88e63ef07477da323d4",
+      "bytes": 6595,
+      "description": "Cut AI tells from any writing. Must always apply.",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack/why",
+      "source": "pstack",
+      "name": "why",
+      "path": "raw_source/pstack/why/SKILL.md",
+      "sha": "c34bc86b6aec4e48dafa19c4f4d25f5989e9689d",
+      "bytes": 21343,
+      "description": "Use for 'why does X work this way', 'why we picked Y', design rationale, regressions, postmortems, or data-backed thresholds. Discovers available MCPs and queries each evidence category (source control, issue tracker, long-form docs, real-time chat, infrastructure observability, error tracking, product analytics warehouse) in parallel, then returns a cited read on decisions and tradeoffs. Use how for runtime behavior.",
+      "frontmatter_keys": [
+        "name",
+        "description"
+      ],
+      "status": "active"
+    }
+  ]
+}
