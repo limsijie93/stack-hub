@@ -1,0 +1,11 @@
+{
+  "name": "stack-hub-core",
+  "version": "0.1.0",
+  "description": "Semantic skills that have earned their place: each survived at least three real uses in lab and replaced the upstream plugin it supersedes.",
+  "author": { "name": "Si Jie Lim", "url": "https://github.com/limsijie93" },
+  "homepage": "https://github.com/limsijie93/stack-hub",
+  "repository": "https://github.com/limsijie93/stack-hub",
+  "license": "MIT",
+  "keywords": ["skills", "engineering", "semantic", "curated"],
+  "skills": []
+}
