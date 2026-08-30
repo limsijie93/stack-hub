@@ -18,6 +18,11 @@
   "skills": [
     "./skills/evidence-discipline",
     "./skills/fan-out-review",
+    "./skills/git-guardrails",
+    "./skills/grilling",
+    "./skills/laziness-protocol",
+    "./skills/model-the-domain",
+    "./skills/resolving-merge-conflicts",
     "./skills/session-continuity",
     "./skills/tdd"
   ]

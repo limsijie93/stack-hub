@@ -35,6 +35,11 @@ prune:
     - "**/SKILL.md"
     - "**/*.md"
     - "LICENSE"
+    # Executable and data sidecars a skill actually needs to work. wizard IS its
+    # template.sh; git-guardrails is unusable without its hook script. Markdown-only
+    # pruning silently dropped five such files.
+    - "**/*.sh"
+    - "**/*.tsv"
   drop:
     - ".github/**"
     - "bin/**"
