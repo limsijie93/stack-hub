@@ -92,9 +92,10 @@ For each promoted skill: keep upstream structure and substance, and edit.
 
 ## Open
 
-- **`grilling` now collides with the installed `mattpocock-skills:grilling`.** That is the lab
-  A/B working as designed — the promotion gate needs exactly this comparison — but two skills
-  will compete on similar triggers until one is uninstalled.
+- ~~`grilling` collides with the installed `mattpocock-skills:grilling`, which is the lab A/B
+  working as designed.~~ **Superseded by 0006.** We do not run competing skills: `grilling`
+  now declares `supersedes: mattpocock-skills:grilling` (plus its two trampolines), and the
+  upstream is uninstalled once stack-hub is installed.
 - Whether "port and sharpen" is enough of a contribution for a zero-landmine skill is a fair
   question. The does-not-apply sections are the honest answer: five of them did not exist
   upstream and are the part most likely to change behaviour.

@@ -2,6 +2,8 @@
 name: session-continuity
 description: Carry work across a context boundary in either direction — write a handoff for the next session, or reconstruct where things stand before resuming. Use for "hand this off", "write a handoff", "catch me up", "where did I leave off", "what was I working on", "pick this back up", or when starting work on something you touched before.
 maturity: lab
+supersedes:
+  - mattpocock-skills:handoff
 upstream:
   - src: mattpocock/productivity/handoff@2eb98a51b97bb5bac461a26ad14828eeac827909
     took: reference artifacts rather than restating them, a suggested-skills section so routing survives the boundary, redact secrets, write outside the workspace, tailor to what the next session is for

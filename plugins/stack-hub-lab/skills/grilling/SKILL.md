@@ -2,6 +2,10 @@
 name: grilling
 description: Interview the user in rounds to sharpen a plan, design or decision before anything is built. Use for "grill me", "grill this", "stress-test my thinking", "challenge this plan", "what am I missing", "poke holes in this", or before committing to a design with open questions. Puts decisions to the user and looks facts up itself.
 maturity: lab
+supersedes:
+  - mattpocock-skills:grilling
+  - mattpocock-skills:grill-me
+  - mattpocock-skills:grill-with-docs
 upstream:
   - src: mattpocock/productivity/grilling@8ca78c6d8f901aab0c5a1f896034b70e666ff2a3
     took: the design tree and the frontier rule, the fact/decision split, a recommended answer with every question, done when the frontier is empty

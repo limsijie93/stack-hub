@@ -54,6 +54,13 @@ for (const p of mp.plugins) {
       check(/^[0-9a-f]{7,40}$/.test(sha ?? ''), s + ': ' + id + ' pinned to a real sha');
       check(!!u.took, s + ': ' + id + ' records what it took');
     }
+
+    // supersedes is optional, but a malformed entry silently supersedes nothing
+    // and leaves a competing skill installed — the exact outcome it exists to prevent.
+    for (const sup of data.supersedes ?? []) {
+      check(typeof sup === 'string' && /^[a-z0-9][a-z0-9-]*:[a-z0-9][a-z0-9-]*$/.test(sup),
+        s + ': supersedes entry is <plugin>:<skill> — ' + JSON.stringify(sup));
+    }
   }
 
   // raw_source/ inside a plugin root would ship, and inside skills/ would be
