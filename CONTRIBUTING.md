@@ -30,6 +30,36 @@ try to register 82 upstream skills as yours.
 
 Everything is born in `lab`. Nothing is drafted straight into `core`.
 
+## Supersession: stack-hub is authoritative
+
+**Where stack-hub ships a skill covering a concept, that skill is the current version.** We do
+not run it alongside the upstream it was built from, and we do not design for coexistence.
+
+Two skills describing the same job compete for the same trigger, and the outcome is decided by
+description phrasing rather than by which is better. That is not a comparison; it is a coin
+toss you cannot read the result of.
+
+So a skill declares what it replaces, in frontmatter:
+
+```yaml
+supersedes:
+  - mattpocock-skills:grilling
+  - mattpocock-skills:grill-me        # trampolines count
+```
+
+Format is `<installed-plugin>:<skill>`. Declare it only where this skill genuinely does the
+whole job — drawing one rule from an upstream is **not** supersession. `evidence-discipline`
+takes a rule from `diagnosing-bugs` and does not replace it, so it declares nothing.
+
+`scripts/validate.mjs` checks the format. Generate the uninstall list with:
+
+```bash
+grep -rh '^  - .*:' plugins/*/skills/*/SKILL.md -A0 | grep -oE '[a-z0-9-]+:[a-z0-9-]+' | sort -u
+```
+
+**Sequencing matters.** Uninstall an upstream plugin only *after* stack-hub is installed and
+its covering skill is present. Uninstalling first leaves you with neither.
+
 ## The promotion gate
 
 A skill moves from `lab` to `core` when **all four** hold:
@@ -38,15 +68,22 @@ A skill moves from `lab` to `core` when **all four** hold:
 2. It needed no edit during those three uses.
 3. Every `landmines` entry from every card in its cluster is resolved in the skill, not
    carried through.
-4. You are willing to uninstall the upstream plugin it supersedes.
+4. **It auto-routed at least once without you naming it.**
 
-(4) is the real gate. While a skill is in lab you keep the upstream plugin installed and
-run both — that comparison *is* the evidence promotion requires. Promotion means you can
-defend a deletion, not that the skill feels finished.
+(4) is the real gate, and it replaced an earlier criterion — "willing to uninstall the
+upstream" — which went vacuous once supersession became immediate rather than deferred.
 
-To promote: move the directory to `plugins/stack-hub-core/skills/`, set `maturity: core`,
-move the path between the two manifests, uninstall the upstream plugin, and record the
-deletion in the skill's decision record.
+It is the right replacement because once the upstream is gone, the thing that still needs
+proving is that the **description works**. A skill that only ever fires when invoked by name
+has a description problem, not a content problem, and the fix is to tune the description
+rather than to promote it. Upstream states this diagnosis directly: *"the skill exists but did
+not trigger"* is its own category of defect.
+
+It is also falsifiable in the way the old criterion was: either you watched it fire on its
+own, or you did not.
+
+To promote: move the directory to `plugins/stack-hub-core/skills/`, set `maturity: core`, move
+the path between the two manifests, and record in the decision record which use auto-routed.
 
 ## Curation
 

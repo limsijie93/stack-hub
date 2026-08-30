@@ -109,7 +109,9 @@ function parseList(lines, i, indent) {
     if (ind !== indent || !text.startsWith('- ')) break;
     const rest = text.slice(2).trim();
 
-    if (/^[^:\s][^:]*:\s*/.test(rest)) {
+    // A colon only opens a mapping when followed by whitespace or end of line.
+    // "- a:b" is the scalar "a:b" (e.g. a plugin-qualified skill id), not a map.
+    if (/^[^:\s][^:]*:(\s|$)/.test(rest)) {
       // "- key: value" — an inline map that may continue on following lines,
       // indented to line up past the dash.
       const childIndent = ind + 2;

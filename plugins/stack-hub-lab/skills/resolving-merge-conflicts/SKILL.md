@@ -2,6 +2,8 @@
 name: resolving-merge-conflicts
 description: Resolve an in-progress git merge or rebase conflict by recovering the intent behind each side, not by picking lines. Use when a merge or rebase has stopped with conflicts, for "resolve these conflicts", "fix the merge", "help me rebase", or when CONFLICT markers are present in the working tree.
 maturity: lab
+supersedes:
+  - mattpocock-skills:resolving-merge-conflicts
 upstream:
   - src: mattpocock/engineering/resolving-merge-conflicts@bfb7e5606e231e6808979f623fce76a9aad4b71c
     took: the whole five-step rule, substantially verbatim - recover intent from primary sources first, preserve both intents, never invent behaviour, always resolve rather than abort

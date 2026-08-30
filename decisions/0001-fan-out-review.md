@@ -85,5 +85,8 @@ two. Neither upstream skill says this, because neither had to.
   (gstack ships `preamble-tier`/`voice-triggers`; mattpocock ships
   `disable-model-invocation`), but this is the first real test. Fallback is a sibling
   `PROVENANCE.yaml`.
-- Promotion needs three real uses against `mattpocock-skills` still installed. Until
-  then this stays in lab.
+- Promotion needs three real uses. **Superseded by 0006**: the original plan was to run
+  this against `mattpocock-skills` still installed and compare. We no longer coexist —
+  stack-hub is authoritative where it ships a covering skill — so the comparison criterion
+  was replaced by an auto-routing test. This skill supersedes nothing installed (pstack is
+  not installed as a plugin), so it is unaffected in practice.

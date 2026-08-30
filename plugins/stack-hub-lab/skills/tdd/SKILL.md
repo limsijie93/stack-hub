@@ -2,6 +2,8 @@
 name: tdd
 description: Decide whether a test is worth writing, where it goes, and what makes it good. Use for TDD, "test first", "red-green", "write a failing test", "add a regression test", or before fixing a bug where a test might lock the fix down. Covers when NOT to write one, which is the more common answer.
 maturity: lab
+supersedes:
+  - mattpocock-skills:tdd
 upstream:
   - src: mattpocock/engineering/tdd@8fc086710806190ee7c4baa32089cb877a75736a
     took: no test at an unconfirmed seam, the three anti-patterns (implementation-coupled, tautological, horizontal slicing), vertical slices as tracer bullets, refactoring is not part of the loop
