@@ -1,0 +1,25 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "stack-hub",
+  "owner": {
+    "name": "Si Jie Lim",
+    "url": "https://github.com/limsijie93"
+  },
+  "description": "A semantic layer over the best open-source agentic skills. Concept-level skills synthesised from several upstream stacks and ported to run in Claude Code.",
+  "plugins": [
+    {
+      "name": "stack-hub-core",
+      "source": "./plugins/stack-hub-core",
+      "category": "engineering",
+      "description": "Semantic skills that have earned their place: each one survived at least three real uses in lab and replaced the upstream plugin it supersedes.",
+      "keywords": ["skills", "engineering", "semantic", "curated"]
+    },
+    {
+      "name": "stack-hub-lab",
+      "source": "./plugins/stack-hub-lab",
+      "category": "engineering",
+      "description": "Semantic skills on probation. Install alongside the upstream plugins they draw on, so you can compare them on real work before promoting.",
+      "keywords": ["skills", "engineering", "experimental", "semantic"]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "stack-hub-lab",
+  "version": "0.1.0",
+  "description": "Semantic skills on probation. Install alongside the upstream plugins they draw on, so you can compare them on real work before promoting.",
+  "author": {
+    "name": "Si Jie Lim",
+    "url": "https://github.com/limsijie93"
+  },
+  "homepage": "https://github.com/limsijie93/stack-hub",
+  "repository": "https://github.com/limsijie93/stack-hub",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "engineering",
+    "experimental",
+    "semantic"
+  ],
+  "skills": [
+    "./skills/fan-out-review"
+  ]
+}
