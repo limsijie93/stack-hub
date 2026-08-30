@@ -1,0 +1,42 @@
+# Authored curation. `catalog/index.json` is derived and disposable; this is not.
+#
+# Excluded skills stay vendored — exclusion is data, not absence, so it can be
+# revisited in one edit. They are skipped by forge-semantic-skill, get no card,
+# and never raise a drift alert.
+#
+# Write the reason as a fact about the skill, not a verdict about its author.
+
+exclude:
+  # --- installers and config for the upstream stack itself -------------------
+  mattpocock/engineering/setup-matt-pocock-skills: >-
+    Installer for the upstream stack's own issue tracker and triage label
+    vocabulary. Setup for that repo, not transferable technique.
+  pstack/setup-pstack: >-
+    Installer that detects available models and writes pstack's per-role model
+    config. Configures the upstream stack itself.
+
+  # --- bound to a specific product, library or person ------------------------
+  pstack/make-bot-ui: >-
+    Specific to waking a Grok Bot over a webhook and exposing it on Tailscale.
+    No equivalent surface here.
+  pstack/poteto-mode: >-
+    A personal agent-style profile for one individual. Preferences, not a
+    reusable mechanism.
+  mattpocock/misc/migrate-to-shoehorn: >-
+    Codemod for one library (@total-typescript/shoehorn).
+  mattpocock/misc/scaffold-exercises: >-
+    Authoring tool for the upstream author's course material.
+  mattpocock/misc/setup-pre-commit: >-
+    One-off repo setup for Husky and lint-staged. A script, not a technique.
+
+  # --- marked unfinished upstream -------------------------------------------
+  # The author's own signal. Revisit if any of these graduate; `retro` and
+  # `claude-handoff` in particular are concepts worth having.
+  mattpocock/in-progress/claude-handoff: Marked in-progress upstream.
+  mattpocock/in-progress/implement-spec: Marked in-progress upstream.
+  mattpocock/in-progress/loop-me: Marked in-progress upstream.
+  mattpocock/in-progress/retro: Marked in-progress upstream.
+  mattpocock/in-progress/setup-ts-deep-modules: Marked in-progress upstream.
+  mattpocock/in-progress/writing-beats: Marked in-progress upstream.
+  mattpocock/in-progress/writing-fragments: Marked in-progress upstream.
+  mattpocock/in-progress/writing-shape: Marked in-progress upstream.

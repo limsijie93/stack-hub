@@ -1,0 +1,66 @@
+name: vendor drift
+
+# Weekly: has upstream moved past our pins in a way that touches something we
+# actually declare? Churn in an excluded skill is not news and stays silent.
+#
+# CI can detect drift but cannot fix it — regenerating a card needs an LLM pass.
+# The issue tells you which cards and which semantic skills to revisit.
+
+on:
+  schedule:
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "sources.yaml"
+      - "catalog/**"
+      - "plugins/**/SKILL.md"
+      - "scripts/**"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # On a PR, verify the committed raw_source/ and index still agree with the
+      # pinned refs. This is the fast, deterministic check.
+      - name: Validate packaging
+        run: node scripts/validate.mjs
+
+      - name: Check pinned state
+        if: github.event_name == 'pull_request'
+        run: node scripts/sync-vendor.mjs --check
+
+      # On a schedule, look past the pin at upstream HEAD.
+      - name: Check upstream drift
+        if: github.event_name != 'pull_request'
+        id: drift
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set +e
+          node scripts/sync-vendor.mjs --upstream 2> drift.txt
+          echo "status=$?" >> "$GITHUB_OUTPUT"
+          cat drift.txt
+
+      - name: Open an issue for declared drift
+        if: github.event_name != 'pull_request' && steps.drift.outputs.status != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Vendor drift: declared upstream has moved"
+          existing=$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number')
+          body=$'Upstream moved past the pins in `sources.yaml`, affecting skills or cards that declare it.\n\n```\n'"$(cat drift.txt)"$'\n```\n\nTo resolve: bump `ref` in `sources.yaml`, run `node scripts/sync-vendor.mjs`, re-run `distill-cards` for the stale cards, then review each semantic skill listed above against what changed.'
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body" --label vendor-drift
+          fi
