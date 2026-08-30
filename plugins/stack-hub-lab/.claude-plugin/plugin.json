@@ -16,6 +16,7 @@
     "semantic"
   ],
   "skills": [
+    "./skills/evidence-discipline",
     "./skills/fan-out-review"
   ]
 }
