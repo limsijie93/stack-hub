@@ -1,0 +1,43 @@
+# Pinned upstream sources for stack-hub.
+#
+# raw_source/ is COMMITTED, PRUNED and SHA-PINNED. Never a symlink (cannot point at
+# GitHub, breaks on clone) and never a submodule (pstack is a subdirectory of a
+# monorepo; gstack would drag in 1684 files).
+#
+# Bump `ref` deliberately, then run: node scripts/sync-vendor.mjs
+# Anything that moves is reported against the cards and semantic skills that
+# declare it.
+
+sources:
+  mattpocock:
+    repo: mattpocock/skills
+    ref: 6654f6b60cd9d5be8b54c6fafe44346dabeb3b76
+    subpath: skills/
+    license: MIT
+    url: https://github.com/mattpocock/skills
+
+  pstack:
+    repo: cursor/plugins
+    ref: 68836ddaf5697224520f1847d90cdb90ca8babaa
+    subpath: pstack/skills/
+    license: MIT
+    url: https://github.com/cursor/plugins/tree/main/pstack
+
+# Deferred to v2 — 65 skills, 2.7 MB, 42 KB average. Hardest pruning and the
+# heaviest portability work ({{PREAMBLE}} placeholders, bin/ script deps).
+#   gstack:
+#     repo: garrytan/gstack
+#     ref: <sha>
+#     subpath: ""
+
+prune:
+  keep:
+    - "**/SKILL.md"
+    - "**/*.md"
+    - "LICENSE"
+  drop:
+    - ".github/**"
+    - "bin/**"
+    - "lib/**"
+    - "node_modules/**"
+    - "**/*.tmpl"

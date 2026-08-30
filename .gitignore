@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- stack-hub ---------------------------------------------------------------
+# The Python template above ignores `lib/` (a setuptools build artifact), which
+# also matches scripts/lib/ — the YAML parser sync-vendor.mjs imports. Without
+# this the repo breaks on a fresh clone.
+!scripts/lib/
+!scripts/lib/**
+
+# iCloud duplicates. This tree syncs via iCloud, which leaves "<name> 2.<ext>"
+# copies behind on conflict. They are never ours.
+* 2.*
+* 2
+* [0-9]
