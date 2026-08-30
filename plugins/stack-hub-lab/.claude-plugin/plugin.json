@@ -17,6 +17,8 @@
   ],
   "skills": [
     "./skills/evidence-discipline",
-    "./skills/fan-out-review"
+    "./skills/fan-out-review",
+    "./skills/session-continuity",
+    "./skills/tdd"
   ]
 }
