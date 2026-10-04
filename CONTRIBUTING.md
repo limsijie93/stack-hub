@@ -30,6 +30,12 @@ try to register 82 upstream skills as yours.
 
 Everything is born in `lab`. Nothing is drafted straight into `core`.
 
+**Original skills** — written from scratch, not synthesised from upstream — go in
+`stack-hub-originals` (or `stack-hub-usage` for the usage tooling). They declare no
+`upstream:` or `maturity:`, and `scripts/validate.mjs` exempts them from those checks.
+Before adding one, strip anything tied to where it was written: employer, internal repo,
+project, table, secret and team names, incident write-ups, and `license: Proprietary`.
+
 ## Supersession: stack-hub is authoritative
 
 **Where stack-hub ships a skill covering a concept, that skill is the current version.** We do

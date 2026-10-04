@@ -17,6 +17,8 @@ that way.
 /plugin marketplace add limsijie93/stack-hub
 /plugin install stack-hub-core     # earned its place
 /plugin install stack-hub-lab      # on probation — run it alongside the upstream it draws on
+/plugin install stack-hub-originals  # original skills: Databricks IaC/CI-CD, PR review and explanation
+/plugin install stack-hub-usage      # context-window + 5h/weekly usage bars; then run /usage-setup
 ```
 
 ## Layout
@@ -31,6 +33,8 @@ catalog/
 plugins/
   stack-hub-core/     promoted skills
   stack-hub-lab/      skills on probation
+  stack-hub-originals/  original skills — no upstream, outside the lab→core gate
+  stack-hub-usage/    usage status line + monthly report
 decisions/            why each concept boundary is drawn    (never ships)
 .claude/skills/       repo-local dev tools                  (never ships)
 scripts/sync-vendor.mjs

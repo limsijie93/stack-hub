@@ -12,14 +12,48 @@
       "source": "./plugins/stack-hub-core",
       "category": "engineering",
       "description": "Semantic skills that have earned their place: each one survived at least three real uses in lab and replaced the upstream plugin it supersedes.",
-      "keywords": ["skills", "engineering", "semantic", "curated"]
+      "keywords": [
+        "skills",
+        "engineering",
+        "semantic",
+        "curated"
+      ]
     },
     {
       "name": "stack-hub-lab",
       "source": "./plugins/stack-hub-lab",
       "category": "engineering",
       "description": "Semantic skills on probation. Install alongside the upstream plugins they draw on, so you can compare them on real work before promoting.",
-      "keywords": ["skills", "engineering", "experimental", "semantic"]
+      "keywords": [
+        "skills",
+        "engineering",
+        "experimental",
+        "semantic"
+      ]
+    },
+    {
+      "name": "stack-hub-originals",
+      "source": "./plugins/stack-hub-originals",
+      "category": "engineering",
+      "description": "Original skills, not synthesised from upstream: Databricks IaC/CI-CD authoring, lane deploys and end-to-end proof, plus PR review and PR explanation.",
+      "keywords": [
+        "skills",
+        "databricks",
+        "terraform",
+        "code-review"
+      ]
+    },
+    {
+      "name": "stack-hub-usage",
+      "source": "./plugins/stack-hub-usage",
+      "category": "engineering",
+      "description": "tqdm-style status line for context-window load and 5h/weekly limits across Claude Code, Codex and Copilot CLI, plus a monthly token report covering Gemini/Antigravity too.",
+      "keywords": [
+        "statusline",
+        "usage",
+        "tokens",
+        "context"
+      ]
     }
   ]
 }
