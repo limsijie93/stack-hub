@@ -1,0 +1,26 @@
+{
+  "name": "stack-hub-originals",
+  "version": "0.1.0",
+  "author": {
+    "name": "Si Jie Lim",
+    "url": "https://github.com/limsijie93"
+  },
+  "homepage": "https://github.com/limsijie93/stack-hub",
+  "repository": "https://github.com/limsijie93/stack-hub",
+  "license": "MIT",
+  "description": "Original skills, not synthesised from upstream: Databricks IaC/CI-CD authoring, lane deploys and end-to-end proof, plus PR review and PR explanation.",
+  "keywords": [
+    "skills",
+    "databricks",
+    "terraform",
+    "code-review"
+  ],
+  "skills": [
+    "./skills/databricks-cicd",
+    "./skills/databricks-e2e-proof",
+    "./skills/databricks-environment",
+    "./skills/databricks-lane-deploy",
+    "./skills/pr-explainer",
+    "./skills/pr-review"
+  ]
+}

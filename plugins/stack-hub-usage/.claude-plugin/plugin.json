@@ -1,0 +1,22 @@
+{
+  "name": "stack-hub-usage",
+  "version": "0.1.0",
+  "author": {
+    "name": "Si Jie Lim",
+    "url": "https://github.com/limsijie93"
+  },
+  "homepage": "https://github.com/limsijie93/stack-hub",
+  "repository": "https://github.com/limsijie93/stack-hub",
+  "license": "MIT",
+  "description": "tqdm-style status line for context-window load and 5h/weekly limits across Claude Code, Codex and Copilot CLI, plus a monthly token report covering Gemini/Antigravity too.",
+  "keywords": [
+    "statusline",
+    "usage",
+    "tokens",
+    "context"
+  ],
+  "skills": [
+    "./skills/usage-report",
+    "./skills/usage-setup"
+  ]
+}

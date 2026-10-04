@@ -8,6 +8,7 @@ import path from 'node:path';
 import { parseFrontmatter } from './lib/yaml-lite.mjs';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
+const ORIGINAL_PLUGINS = new Set(['stack-hub-originals', 'stack-hub-usage']);
 let failed = 0;
 const check = (cond, msg) => {
   process.stdout.write((cond ? '  ok   ' : '  FAIL ') + msg + '\n');
@@ -46,6 +47,8 @@ for (const p of mp.plugins) {
     const { data } = parseFrontmatter(fs.readFileSync(sp, 'utf8'));
     check(!!data.name, s + ': has a name');
     check(!!data.description, s + ': has a description (this is what auto-routes)');
+    // Original work has no upstream to declare and no lab -> core promotion path.
+    if (ORIGINAL_PLUGINS.has(p.name)) continue;
     check(['lab', 'core'].includes(data.maturity), s + ': maturity is lab or core');
     check(Array.isArray(data.upstream) && data.upstream.length > 0,
       s + ': declares at least one upstream');
